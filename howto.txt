@@ -1,0 +1,6 @@
+1. Install XAMPP.
+2. Navigate to "C:\xampp\htdocs" and paste "Rent-a-Car" project.
+3. Open XAMPP Control Panel, Start Apache and MySQL.
+4. Navigate to "http://localhost/phpmyadmin/", create "rent-a-car" database.
+5. Execute database.sql script in phpmyadmin database query.
+6. Navigate to "http://localhost/Rent-a-Car/Rent-a-Car/login.php".

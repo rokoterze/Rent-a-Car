@@ -1,0 +1,191 @@
+#mainCont_accdb{
+    grid-area: content;
+
+    display: grid;
+    grid-template-areas:
+    'table'
+    'form';
+    grid-template-rows: 35% 65%;
+    
+    height: 100%;
+    overflow: hidden;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+
+}
+#mainCont_systracker{
+    grid-area: content;
+    
+    height: 100%;
+    overflow: hidden;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#mainCont_sysconfig{
+    height: 100%;
+    overflow: hidden;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+#mainCont_syslogs{
+    height: 100%;
+    overflow: auto;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+
+}
+#rightCont{
+    display: block;
+    text-align: center;
+}
+label{
+    color: whitesmoke;
+}
+
+#pagination{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#pagination-child{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paginationnumber{
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 5px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+#main{
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+}
+#table{
+    grid-area: table;
+    overflow-x: auto;
+    color: whitesmoke;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#form{
+    grid-area: form;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+}
+#form-child{
+    
+    padding: 10px;
+    color: whitesmoke;
+    width: 100%;
+}
+#username{
+    background-color: white;
+    cursor: default;
+}
+input  {
+    width: 250px;
+    height: 35px;
+    margin: 8px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: whitesmoke;
+    color: black;
+    margin-bottom: 10px;
+}
+input:focus{
+    outline: none;
+    background-color: rgba(180, 180, 180, 1);
+    transition: 0.5s ease-in-out;
+    border: 1px solid rgba(255, 0, 255, 0.5);
+}
+#username{
+    border: 2px solid rgba(255, 0, 255, 0.5);
+    text-align: center;
+    width: 200px;
+}
+table{
+    width: 100%;
+    border-collapse:collapse;
+}
+th{
+    background-color: rgba(15, 15, 15);
+    color: whitesmoke;
+    height: 50px;
+    border-bottom: 1px solid white;
+    text-align: left;
+    
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+tr{
+    color: whitesmoke;
+    height: 10px;
+    border: none;
+}
+tr:hover{
+    background-color: rgba(154, 57, 169, 1);
+    cursor: default;
+}
+select{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+}
+#update, .submit, #restore{
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    border: transparent;
+    background-color: rgb(0, 150, 255);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 20px;
+    max-width:80%;
+}
+.config-input{
+    width: 80px;
+    text-align: center;
+}
+.error-span{
+    font-size: 12px;
+    transition: 0.5s ease-in-out;
+}
+#popup1{
+    color: green;
+    font-size: 15px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+#popup2{
+    color: red;
+    font-size: 15px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+#backup_file{
+    width: auto;
+    cursor: pointer;
+    height: auto;
+}

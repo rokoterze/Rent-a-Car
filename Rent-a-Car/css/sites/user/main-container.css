@@ -1,0 +1,280 @@
+#mainCont_administration{
+    grid-area: content;
+
+    display: grid;
+    grid-template-areas:
+    'form'
+    'error'
+    'table';
+    grid-template-rows: 62% 3% 35%;
+    
+    height: 100%;
+    overflow: hidden;
+    padding: 10px;
+    
+
+}
+
+#form_administration{
+    grid-area: form;
+    height: 100%;
+    overflow: scroll;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: grid;
+    grid-template-areas:
+    'add edit';
+    grid-template-columns: 1fr 1fr;
+}
+
+#form_administration_add{
+    grid-area: add;
+    overflow-x: auto;
+    color: whitesmoke;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+} 
+#form_administration_edit{
+
+    grid-area: edit;
+    overflow-x: auto;
+    color: whitesmoke;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#errordiv{
+    grid-area: error;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+#table_administration{
+    grid-area: table;
+    overflow-x: auto;
+    color: whitesmoke;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top: 2px solid grey;
+}
+/* ////////////////////////////////////////////////////////////// */
+#mainCont_checkin{
+    grid-area: content;
+
+    display: grid;
+    grid-template-areas:
+    'title'
+    'form'
+    'table';
+    grid-template-rows: 5% 45% 50%;
+    
+    height: 100%;
+    overflow: hidden;
+    padding: 10px;
+    
+
+}
+#checkin_title{
+    grid-area: title;
+    height: 100%;
+    overflow: scroll;
+    color: whitesmoke;
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid grey;
+}
+#form_checkin{
+    grid-area: form;
+    height: 100%;
+    overflow: scroll;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: grid;
+    grid-template-areas:
+    'vehicle customer';
+    grid-template-columns: 1fr 1fr;
+}
+#form_checkin_vehicle{
+
+    grid-area: vehicle;
+    overflow-x: auto;
+    color: whitesmoke;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    display: block;
+    text-align: center;
+}
+#form_checkin_customer{
+    grid-area: customer;
+    overflow-x: auto;
+    color: whitesmoke;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    display: block;
+    text-align: center;
+} 
+
+
+#table_checkin{
+    grid-area: table;
+    overflow-x: auto;
+    color: whitesmoke;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top: 2px solid grey;
+
+}
+/* ////////////////////////////////////////////////////////////// */
+#mainCont_checkout{
+    grid-area: content;
+
+    display: grid;
+    grid-template-areas:
+    'title'
+    'form'
+    'table';
+    grid-template-rows: 5% 55% 40%;
+    
+    height: 100%;
+    overflow: hidden;
+    padding: 10px;
+}
+#checkout_title{
+    grid-area: title;
+    height: 100%;
+    overflow: scroll;
+    color: whitesmoke;
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid grey;
+}
+#form_checkout{
+    grid-area: form;
+    height: 100%;
+    overflow: scroll;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+
+#table_checkout{
+    grid-area: table;
+    overflow-x: auto;
+    color: whitesmoke;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top: 2px solid grey;
+
+}
+/* ////////////////////////////////////////////////////////////// */
+
+#mainCont_statistics{
+    grid-area: content;
+
+    display: grid;
+    grid-template-areas:
+    'title'
+    'table';
+    grid-template-rows: 5% 95%;
+    
+    height: 100%;
+    overflow: hidden;
+    padding: 10px;
+}
+#statistics_title{
+    grid-area: title;
+    height: 100%;
+    overflow: scroll;
+    color: whitesmoke;
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid grey;
+}
+
+#table_statistics{
+    grid-area: table;
+    overflow-x: auto;
+    color: whitesmoke;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top: 2px solid grey;
+
+}
+/* ////////////////////////////////////////////////////////////// */
+#submit, #searchbtn, #showall{
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    border: transparent;
+    background-color: rgb(0, 150, 255);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 20px;
+    max-width:80%;
+}
+
+.inputint{
+    width: 80px;
+    text-align: center;
+}
+#totalprice{
+    width: 100px;
+    height: 40px;
+    border: 2px solid green;
+    font-size: 15px;
+    font-weight: bold;
+}
+.asterix{
+    color: red;
+}
+.display{
+    width: 100px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: default;
+    color: blueviolet;
+}
+.displaydate{
+    width: 100px;
+    text-align: center;
+    font-size: 13px;
+    cursor: default;
+}
+.displaydata{
+    width: 150px;
+    text-align: center;
+    font-size: 15px;
+    cursor: default;
+}
+

@@ -1,0 +1,416 @@
+*{
+    font-family: 'Segoe UI';
+    color: whitesmoke;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    /* background-image: url("../../resources/img/bgm2.jpg"); */
+    background-image: url("../../resources/img/bgm6.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    margin: 0px;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+hr{
+    border: 1px solid rgba(255, 0, 255, 0.2);
+}
+
+h2{
+    font-size: 28px;
+    color: whitesmoke;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+p{
+    font-size: 14px;
+    color: whitesmoke;
+}
+a{
+    font-size: 14px;
+    text-decoration: none;
+    color:  rgb(0, 150, 255);
+}
+.contact{
+    padding-top: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: whitesmoke;
+
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 5px;
+
+}
+
+
+.signup-form , .login-form , .reset-form, .activation-form, .contact-form{
+    color: Black;
+    background-color: rgba(0, 0, 0, 0.95);
+
+    width: 400px;
+    height: auto !important;
+    padding: 10px;
+
+    justify-content: center;
+    
+    box-shadow: 0px 50px 100px  rgba(10, 10, 10);
+}
+
+.contact-form{
+    width: 600px;
+}
+#senderEmail{
+    width: 40%!important;
+}
+#message{
+    width: 80%;
+    height: 300px!important;
+
+    border: 1px solid rgba(255, 0, 255, 0.2);
+    background-color: rgba(50, 50, 50, 0.3);
+    color: white;
+
+    resize: none;
+
+    overflow-y: auto;
+}
+
+#message:hover{
+    transition: 0.5s ease-in-out;
+    border: 1px solid rgba(255, 0, 255, 0.5);
+    
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    padding: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(59, 59, 59, 0.3); 
+  margin-right: 5px;
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 0, 255, 0.5); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 0, 255, 0.8);
+}
+
+
+
+input{
+    width: 70%;
+    height: 35px;
+    margin: 8px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: rgba(50, 50, 50, 0.8);
+    color: white;
+    margin-bottom: 10px;
+}
+
+input:focus{
+    outline: none;
+    background-color: rgba(20, 20, 20, 1);
+    transition: 0.5s ease-in-out;
+    border: 1px solid rgba(255, 0, 255, 0.5);
+}
+
+button, #submit{
+    width: 40%;
+    height: 40px;
+    border-radius: 20px;
+    border: transparent;
+    background-color: rgb(0, 150, 255);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 20px;
+    max-width:80%;
+}
+#submit:disabled{
+    background-color: rgb(255, 0, 0,0.2);
+    cursor: default;
+}
+
+span{
+    font-size: 12px;
+    transition: 0.5s ease-in-out;
+}
+
+#popup1{
+    color: green;
+    font-size: 15px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+#popup2{
+    color: red;
+    font-size: 15px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+#adminpwdspan{
+    color: rgb(0, 150, 255);
+    visibility: hidden;
+}
+
+#recaptcha{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#adminpwd{
+    width: 40%;
+    height: 30px;
+    margin: 8px;
+    
+    border: 1px solid transparent;
+    background-color: rgba(50, 50, 50, 0.2);
+    border: 3px rgba(0, 100, 255, 0.7) solid;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+#adminpwd:focus{
+    cursor: inherit;
+}
+
+#adminpwd:focus::placeholder{
+    color: whitesmoke;
+    opacity: 0.5;
+}
+
+.footer{
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    justify-content: flex-end;
+
+}
+
+.header{
+    
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.cookies-eu-banner {
+
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    font-size: 13px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+    height: 10vh;
+}
+
+.cookies-eu-banner button {
+    text-decoration: none;
+    background: #222;
+    color: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+    padding: 4px 7px;
+    margin: 2px 0;
+    font-size: 13px;
+    font-weight: 700;
+    width: 100px;
+}
+
+.cookies-eu-banner button:hover {
+    background: #fff;
+    color: #222;
+}
+
+.hidden {
+    display: none;
+}
+ /* ///////////////////////////////////////////////////////////////////////// */
+@media (max-height: 1080px) {
+    .signup-form, .login-form, .reset-form, .activation-form, .contact-form, .footer{
+       transform: scale(1);
+       max-height: fit-content;
+    }    
+    .header{
+        height: 25px;
+    }
+    .contact{
+        padding-top: 3px;
+        font-size: 14px;
+    }
+    
+}
+@media (max-height: 900px) {
+    
+    .signup-form, .login-form, .reset-form, .activation-form, .contact-form{
+       transform: scale(0.8);
+    }
+    .cookies-eu-banner{
+        width: 100%;
+    }
+    .cookies-eu-banner label{
+        font-size: 10px;
+    }
+    .cookies-eu-banner button{
+        transform: scale(0.7);
+    }
+    #zerobr{
+        display: none;
+    }
+    #secondbr{
+        display: none;
+    }
+    .header{
+        height: 25px;
+
+    }
+    .contact{
+        padding-top: 3px;
+        font-size: 14px;
+    }
+    .footer{
+        font-size: 12px;
+    }
+    
+}
+@media (max-height: 750px) {
+    .signup-form, .login-form, .reset-form, .activation-form, .contact-form{
+       transform: scale(0.6);
+    }
+    #zerobr{
+        display: none;
+    }
+    .footer{
+        font-size: 10px;
+    }
+     
+}
+
+@media screen and (max-height: 550px) {
+    .signup-form, .login-form, .reset-form, .activation-form, .contact-form{
+       transform: scale(0.5);
+    }
+}
+/* //////////////////////////// */
+
+@media (max-width: 700px) {
+
+    /* .contact-form{
+        width: 450px;
+        max-height: fit-content;
+    } */
+
+    .cookies-eu-banner{
+        height: 80px!important;
+    }
+    
+}
+/* @media (max-width: 500px) {
+
+    .contact-form{
+        width: 400px;
+    }
+}
+@media (max-width: 370px) {
+
+    .contact-form{
+        width: 400px;
+    }
+} */
+
+@media screen and (max-width: 300px) {
+    /* .signup-form, .login-form, .reset-form, .activation-form{
+       transform: scale(0.5);
+    } */
+    .contact-form{
+        width: 300px;
+    }
+}
+
+/*  
+ 
+2022/2023 WIDTH — HEIGHT
+    Mobile – 360 x 640; 375 x 667; 360 x 720
+    Tablet – 768 x 1024
+    iPhone – 375 x 812
+    Laptop – 1366 x 768
+    Desktop or high-resolution laptop – 1920 x 1080
+ */
+
+
+#profile{
+    border-radius: 1000px;
+    width: 150px;
+
+}
+#imgdiv{
+    height: 200px;
+
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-bottom: 2px solid rgba(255, 0, 255, 0.8);
+}
+.authorclass{
+    height: 300px;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+}
+
+.authorlabel{
+    font-size: 15px;
+    color: whitesmoke;
+    font-weight: bold;
+}
+.authorinput{
+    width: 200px;
+    text-align: center;
+}
+#profile{
+    border: 5px solid black;
+}
+
+
